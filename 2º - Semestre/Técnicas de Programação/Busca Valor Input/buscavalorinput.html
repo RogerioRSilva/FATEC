@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Valor Input</title>
+    
+</head>
+<body>
+    <h1>Buscando um valor dentro do input</h1>
+    <form id="formulario" action="">
+        <input type="text" id="campo" placeholder="Digite algo">
+        <input type="submit">
+    </form>
+    <script>
+        var form = document.getElementById('formulario')
+        var campo = document.getElementById('campo')
+
+        form.addEventListener('submit', function(e){
+            //alert
+            alert(campo.value)
+            //console
+            console.log(campo.value)
+
+            //O comando abaixo impede o envio do formulário total 
+            e.preventDefault()
+        })
+    </script>
+</body>
+</html>
