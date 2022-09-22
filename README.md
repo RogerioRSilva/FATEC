@@ -16,5 +16,16 @@
 
     Redes e Sistemas Operacionais -- (Parte teórica e Pratica sobre redes e sistemas operacionais)
 
+2º - Semestre: 
+    Estrutura de Dados ------------- (Desenvolvimento de técnicas e metodos estruturados em Python)
 
+    Banco de Dados ----------------- (Comunicação de banco de dados Não Relacional e Relacional usando MySQL)
+
+    Matemática --------------------- (Parte teórica de Matemática voltada para Programação )
+
+    Técnicas de Programação -------- (Desenvolvimento de técnicas de programação usando o JS e REACT)
+
+    Desenvolvimento WEB II --------- (Desenvolvimento de técnicas de programação usando o NodeJS)
+    
+    Engenharia de Sofware II ------- (Parte teórica e prática sobre métodos de desenvolvimento de softwares continuidade do anterior.)
 
