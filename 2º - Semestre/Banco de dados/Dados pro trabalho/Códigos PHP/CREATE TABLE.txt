@@ -1,0 +1,16 @@
+CREATE TABLE `scores` (
+     `id` INT NOT NULL AUTO_INCREMENT ,
+     `name` VARCHAR( 20 ) NOT NULL ,
+     `score` INT NOT NULL ,
+     PRIMARY KEY ( `id` )
+     ) ENGINE = InnoDB;
+
+
+usuário:rogsilva2022
+
+Senha: X3M!*L59|@ZMCDsd
+
+Site: https://projetojogofatec.000webhostapp.com/
+
+
+Base de dados: id19570568_projetojogofatec
