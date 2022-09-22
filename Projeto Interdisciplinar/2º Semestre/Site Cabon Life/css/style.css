@@ -1,0 +1,42 @@
+*. {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/img/fundo_site.svg');
+
+}
+
+@media only screen and (min-width:360px) {
+    body {
+        background-size: cover;
+    }
+
+}
+
+@media only screen and (min-width:800px) {
+    body {
+        background-size: cover;
+    }
+
+}
+
+@media only screen and (min-width:1800px) {
+    body {
+        background-image: url('/img/fundo_site.svg');
+    }
+
+}
+
+nav{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+
+}
+
+button{
+    
+}
