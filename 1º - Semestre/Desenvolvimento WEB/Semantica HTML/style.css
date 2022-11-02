@@ -1,0 +1,62 @@
+body {}
+
+header #topo {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+
+}
+
+header #topo img {
+    width: 100px;
+    margin-left: 1cm;
+    padding: 0.2cm 0.2cm 0.5cm 0.2cm;
+
+
+}
+
+header h1 {
+    width: 100%;
+    padding: 31.2px;
+    font-size: 40px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+
+
+}
+
+nav {
+    background-color: rgb(134, 132, 143);
+}
+
+nav a:hover {
+    color: white;
+    background-color: black;
+    transition: background .7s;
+}
+
+nav a {
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    border-style: double;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#rodape p {
+    background-color: rgb(134, 132, 143);
+    align-content: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+#rodape {
+
+    background-color: rgb(134, 132, 143);
+}

@@ -1,0 +1,484 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #cccccc;
+    
+}
+
+#menu-h ul {
+    width: 100%;
+    
+    display: block;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    padding: 0;
+    list-style: none;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#menu-h ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    display: inline-block;
+    transition: background .4s;
+    font-size: 19px;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(54, 40, 119);
+    color: beige;
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+main img {
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+
+}
+
+.escopo {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.escopo .box1 {
+    background-color: rgb(230, 230, 230);
+    width: 90%;
+    display: flex;
+    height: 600px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.escopo .box1 h1 {
+    font-family: serif;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.escopo .box1 p {
+    font-size: 20px;
+    font-family: serif;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 29px;
+}
+
+.escopo .box1 h2 {
+    font-family: serif;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.escopo .box1 li {
+    font-size: 18px;
+    font-family: serif;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+    list-style: circle;
+    line-height: 25px;
+}
+.escopo .box2 {
+    background-color: rgb(230, 230, 230);
+    width: 90%;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    height: 600px;
+    border-left: solid 1px #2c2c2c;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.escopo .box2 h1 {
+    font-family: serif;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.escopo .box2 p {
+    font-size: 20px;
+    font-family: serif;
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 29px;
+}
+.objetivo{
+    display: flex;
+    flex-direction: column;
+}
+.cliente{
+    display: flex;
+    flex-direction: column;
+}
+.working {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.working .box1 {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.working .box1 .card1 {
+    width: 300px;
+    height: 200px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.working .box1 h2 {
+    line-height: 10px;
+    display: flex;
+    align-self: baseline;
+}
+
+.working .box1 hr {
+    width: 298px;
+    display: flex;
+    border: solid 1px black;
+}
+
+.working .box2 {
+    width: 300px;
+    height: 400px;
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.working .box2 .card2 {
+    width: 300px;
+    height: 200px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.working .box3 {
+    width: 300px;
+    height: 400px;
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.working .box3 .card3 {
+    width: 300px;
+    height: 200px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.card1 img {
+    width: 100%;
+    height: 200px;
+}
+
+.card2 img {
+    width: 100%;
+    height: 200px;
+}
+
+.card3 img {
+    width: 100%;
+    height: 200px;
+}
+
+.box1 .text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box1 .text1 p {
+    font-size: 22px;
+    font-weight: bolder;
+    display: flex;
+}
+.box1 .btn {
+    background-color: red;
+    display: flex;
+    width: 30%;
+    height: 45px;
+    justify-content: center;
+}
+.box2 .text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box2 .text2 p {
+    font-size: 22px;
+    font-weight: bolder;
+    display: flex;
+}
+.box2 .btn {
+    background-color: red;
+    display: flex;
+    width: 30%;
+    height: 45px;
+    justify-content: center;
+}
+.box3 .text3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box3 .text3 p {
+    font-size: 22px;
+    font-weight: bolder;
+    display: flex;
+}
+.box3 .btn {
+    background-color: red;
+    display: flex;
+    width: 30%;
+    height: 45px;
+    justify-content: center;
+}
+
+.rodape {
+    width: 100%;
+    height: 250px;
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy {
+    width: 33%;
+    height: 250px;
+    display: flex;
+    font-family: serif;
+    color: rgb(255, 252, 248);
+    font-size: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    line-height: 20px;
+    text-align: center;
+}
+
+.copy2 {
+    width: 33%;
+    height: 250px;
+    display: flex;
+    font-family: serif;
+    color: rgb(255, 252, 248);
+    font-size: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    line-height: 20px;
+}
+
+.linkssocial {
+    width: 33%;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+
+}
+
+.icon1 {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-right: 8px;
+}
+
+.link1 {
+    font-size: 20px;
+    font-family: serif;
+    text-decoration: none;
+    color: rgb(255, 252, 248);
+    display: flex;
+    margin-left: 60px;
+
+}
+
+.icon2 {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-right: 8px;
+}
+
+.icon3 {
+    width: 33%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon3 img {
+    width: 200px;
+    height: 200px;
+
+
+}
+
+.link2 {
+    font-size: 20px;
+    font-family: serif;
+    text-decoration: none;
+    color: rgb(255, 252, 248);
+    display: flex;
+    margin-left: 60px;
+}
+
+.youtube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviços {
+    width: 90%;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+   
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 10px 10px 8px 10px rgba(87, 86, 86, 0.726);
+    flex-direction: row;
+
+}
+
+.serviços h1 {
+    width: 100%;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    align-self: baseline;
+    position: absolute;
+    text-shadow: 10px 8px 10px #1f1e1ee8;
+
+}
+
+.boxservicos1 {
+    width: 90%;
+    height: 500px;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.boxservicos2 {
+    width: 90%;
+    height: 500px;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.boxservicos3 {
+    width: 90%;
+    height: 500px;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.carousel {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.listaagenda{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.listaagenda li{
+    list-style:circle;
+    line-height: 60px;
+    font-size: 25px;
+}
+.agendamento{
+    width: 90%;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 8px 10px rgba(87, 86, 86, 0.726);
+    
+}
+.agendamento h1 {
+    width: 100%;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    align-self: baseline;
+    position: absolute;
+    text-shadow: 10px 8px 10px #1f1e1ee8;
+
+}

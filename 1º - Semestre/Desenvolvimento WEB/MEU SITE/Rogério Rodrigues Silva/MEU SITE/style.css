@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(imagens/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+
+}
+h1.cabecalho{
+    background-image: url(imagens/cabecalho.jpg);
+    background-position-x: center;
+    border-radius: 30px;
+    font-family:monospace;
+    font-size: 60px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    color: rgb(153, 24, 24);
+    vertical-align: top;
+    padding: 20px 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0.5cm 2cm;
+    display: flex;
+}
+div{
+    background-color: rgba(134, 241, 205, 0.233);
+    color: rgb(10, 10, 10);
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin: 1cm 10cm;
+    font-size: 29px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 20px; 
+    border-radius: 20px;
+}
+p{
+    background-color: rgba(134, 241, 206, 0.521);
+    color: rgb(10, 10, 10);
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 20px; 
+    border-radius: 20px;
+}
+img{
+    margin: 0.5cm 1cm;
+    display: inline-block;
+
+}
+a.retorno{
+    font-size: 25PX; 
+    text-shadow: 0.1em 0.1em 0.2em black;
+    color: red;
+    margin: 1cm;
+    display:inline-block;
+    vertical-align: middle;
+}
+img.ajuste{
+    margin: 0.5cm 1cm;
+    display: inline-block;
+    width: 8cm;
+    height: 10cm;
+}
+p.sinopse{
+    background-color: rgba(134, 241, 206, 0.521);
+    color: rgb(10, 10, 10);
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 25px;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+      
+    
+
+}div.ajuste{
+    display: inline-block;
+    vertical-align:top;
+    margin: 0.5cm;  
+}
+div.sinopse{
+    display: inline-block;
+    vertical-align:top;
+    margin: 0.5cm;
+    width: 50%;
+}
+.trailer{
+    display:inline-block;
+    vertical-align:top;
+    width: 600px;
+    
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0.3;
+    color: rgb(179, 28, 28);
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+h1.info{
+    background-image: url(imagens/cabecalho.jpg);
+    background-position-x: center;
+    border-radius: 30px;
+    font-family:monospace;
+    font-size: 65px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    color: rgb(153, 24, 24);
+    vertical-align: top;
+    padding: 20px 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0.5cm 2cm;
+}
+p.infos{
+    background-color: rgba(134, 241, 206, 0.521);
+    color: rgb(10, 10, 10);
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 25px;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+}
+#teste{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    bottom: 259px;
+    margin-right: 3cm;
+
+}
+#menus{
+    margin-top:-8cm; 
+    width: 95%; 
+    margin-left: 1cm; 
+    margin-right: 4cm;
+}
+li{
+    color:rgb(189, 178, 31);
+    list-style-type:disc;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}

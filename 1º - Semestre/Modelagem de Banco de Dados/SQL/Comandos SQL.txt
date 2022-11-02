@@ -1,0 +1,180 @@
+-- Comando para criar um novo BD no servidor:
+create database ComandosIniciais
+
+-- Passar a trabalhar dentro do BD indicado:
+use ComandosIniciais
+
+-- Comando para criar tabelas e variaveis:
+create table Filme(
+	codigo int,
+	titulo_original char(40),
+	ator_principal varchar (70),
+	previsao_estreia datetime
+)
+--Inserindo dados na tabela:
+
+insert into Filme 
+	values( 123, 'Batman', '2020/02/05', 16, 29.39)
+
+--Comando para visualizar a tabela:
+select * from Filme
+ 
+ --Inserir Colunas na Tabela:
+ alter table Filme
+	add Classificacao int 
+
+alter table Filme
+	add custo_total decimal(8,2)
+
+--Apagando uma coluna:
+alter table Filme
+	drop column ator_principal
+
+--Alterando a estrutura da coluna:
+alter table Filme
+	alter column custo_total int
+
+alter table Filme
+	alter column custo_total decimal(8,2)
+
+--Comando para apagar uma tabela:
+
+drop table filme
+
+========================================================================
+create database VendasDSM 
+
+-- Para passar a trabalhar no BD criado:
+
+use VendasDSM
+
+create table Fornecedor(
+	codFor int PRIMARY KEY,
+	RazaoSocial varchar(50),
+	CNPJ varchar (20),
+	Fone varchar (30)
+)
+select * from Fornecedor
+
+insert into Fornecedor
+	values(4,'Lojas CEM','02015365000178','1131014444')
+
+--Selecionar campos específicos da tabela --
+
+select CNPJ, RazaoSocial from Fornecedor
+
+--Inserir Valores em campos específicos--
+
+insert into fornecedor (codFor, RazaoSocial)
+	values (5, 'Lojas Americanaws')
+
+--Atualizar (alterar) valores que já existem na tabela:
+
+update Fornecedor set CNPJ = '25599897000145'
+where codFor = 2
+
+--Atualizar campos nulos (sem dados):
+
+update Fornecedor set CNPJ = '09563897000145'
+where codFor = 5
+
+--Excluir linhas da tabela:
+delete Fornecedor
+where codFor = 5
+
+--Excluir valores da Coluna:
+
+update fornecedor set fone = null
+
+--Aplicar filtros a registros específicos:
+-- =, >, <, >=, <=, <> ou !=
+
+
+=============================================================
+--Como tornar um campo obrigatório:
+alter table Marca
+	alter column codMar int NOT NULL
+
+-- Adicionar PK em uma table que foi criada sem PK:
+alter table Marca
+	add Primary key (codMar)
+
+-- Criar nova tabela com chave estrangeira:
+
+create table Produto(
+	codPro int primary key identity(1,1),
+	descricao varchar(40),
+	codBarras varchar(20),
+	estoque int,
+	codCat int foreign key references Categoria (codCat)
+)
+
+-- Criar FK depois que que table já foi criada
+alter table produto
+	add codMar int foreign key references Marca (codMar)
+
+-- Quando o Campo já existe, amis ainda não é FK:
+alter table Produto
+	add foreign key (codFor) references Fornecedor (codFor)
+===============================================================
+--Criando chave primaria composta:
+
+create table Bibliografia(
+	codLivro int foreign Key References Livro(codLivro),
+	codDis int Foreign Key References Disciplina (codDis),
+--> primary Key(codLivro, codDis) --PK Composta ao criar tabela
+
+QUANDO A TABELA JÁ EXISTE:
+
+alter table Escreve
+	alter column codLivro int NOT NULL
+
+alter table Escreve
+	add PrimaryKey(codLivro)
+
+--Seleceção específica de itens (Deixa somente os itens cadastrados sem repetir)
+
+select distinct Especie
+	from Animal
+	
+=============================================================================
+
+from Produto
+
+--SUM = Retorna soma
+select sum (preco) as Valor total
+From produto
+
+
+--AVG = Calcula a Média
+
+select AVG (preco) as Mediadopreco
+from produto
+
+--count = Retorna contagem
+
+select count (valor) as qtdProd
+from produto
+
+--arredondamento
+select round(avg(valor),2) as PrecoMedioarredondado
+from produto
+
+select descricao, valor, round(valor*1.14,2) as novoPreco
+from produto
+order by descricao -- Ordenando em ordem alfabética
+
+select * from produto
+
+--Atualizar dinamicamente o ultimo produto da lista
+update produto
+set descricao = 'Alcoll Gel', valor = 19.50
+where codPro = (select max(codPro) from produto)
+
+
+--Consulta com junção de tabelas 
+
+select nome  
+from espcialidade as E inner join Medico
+on especialidade.codEsp = Medico.CodEsp 
+
