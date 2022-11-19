@@ -27,7 +27,7 @@ body {
     padding: 20px;
 }
 
-.Card.Red .Header{color: #FFF; background-color: #C62828;}
+.Card.Red .Header{color: #FFF; background-color: #C62828; border-radius: 20px 20px 0px 0px;}
 .Card.Red .Content{background-color: #F44336;}
 
 .Card.Green .Header{color: #FFF; background-color: #2E7D32;}
