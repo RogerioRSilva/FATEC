@@ -1,28 +1,35 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import Intervalo from './components/Intervalo'
-import Soma from './components/Soma'
-import Media from './components/Media'
+import Desafio from './components/Desafio'
+import Numero from './components/Numero'
+import Propriedades from './components/Propriedades';
+import Recesso from './components/Recesso';
 import Sorteio from './components/Sorteio'
 
 function App() {
 
-  const [min, setMin] = useState(1);
-  const [max, setMax] = useState(100);
-
+  const [numero, setNum] = useState(1);
+  
   return (
     <div className="App">
-      <h1>Projeto React-Redux</h1>
+      <h1>Projeto Avaliativo React-Redux 2° Bimestre</h1>
 
       <div className='linha'>
-        <Intervalo min={min} max={max} onMinChange={setMin} onMaxChange={setMax}></Intervalo>
+        <Desafio></Desafio>
       </div>
 
-      <div className='linha'>
-        <Soma min={min} max={max} />
-        <Media min={min} max={max} />
-        <Sorteio min={min} max={max} />
+      <div>
+        <Numero numero={numero} onMinChanged={setNum}/>
+      </div>
+      <div>
+        <Propriedades titulo='Qual a sua nota?' nome='Rogerio' numero={numero}></Propriedades>
+      </div>
+      <div>
+        <Sorteio numero={numero}/>
+      </div>
+      <div>
+        <Recesso numero={numero}/>
       </div>
 
 
