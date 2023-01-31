@@ -9,7 +9,7 @@ import Sorteio from './components/Sorteio'
 
 function App() {
 
-  const [numero, setNum] = useState(1);
+  const [numero, setNum] = useState(0);
   
   return (
     <div className="App">
