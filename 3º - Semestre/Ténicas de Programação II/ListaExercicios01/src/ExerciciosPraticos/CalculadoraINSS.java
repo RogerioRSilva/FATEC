@@ -70,28 +70,24 @@ public class CalculadoraINSS {
 			System.out.println("Desconto: " + valorDesconto);
 				
 			return this.salarioBruto - valorDesconto;
-		}else {
-			if(this.salarioBruto > 3641.03 && this.salarioBruto <= 7087.22) {
-				setDeducao(this.deducao = 163.82);
-				setAliquota(this.aliquota = 0.14);
-				
-				double convertAliquota = Math.round(getAliquota()*100);
-				double valorDesconto = (this.salarioBruto * getAliquota()) - getDeducao();
-				
-				System.out.println("Salario Bruto: "+ getSalarioBruto());
-				System.out.println("Aliquota (%): "+ convertAliquota);
-				System.out.println("Desconto: " + valorDesconto);
-					
-				return this.salarioBruto - valorDesconto;
-			}else {
-				System.out.println("Salario acima do estipulado na tabela.");
-				return this.salarioBruto;
-			}
 			
+		}else if(this.salarioBruto > 3641.03 && this.salarioBruto <= 7087.22) {
+			setDeducao(this.deducao = 163.82);
+			setAliquota(this.aliquota = 0.14);
+				
+			double convertAliquota = Math.round(getAliquota()*100);
+			double valorDesconto = (this.salarioBruto * getAliquota()) - getDeducao();
+				
+			System.out.println("Salario Bruto: "+ getSalarioBruto());
+			System.out.println("Aliquota (%): "+ convertAliquota);
+			System.out.println("Desconto: " + valorDesconto);
+					
+			return this.salarioBruto - valorDesconto;
+			
+		}else {
+			System.out.println("Salario acima do estipulado na tabela.");
+			return this.salarioBruto;
 		}
-		
+					
 	}
-
-	
-
 }
