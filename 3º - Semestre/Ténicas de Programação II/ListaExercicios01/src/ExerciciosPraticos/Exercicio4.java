@@ -1,6 +1,6 @@
 package ExerciciosPraticos;
 
-public class Exercicios4 {
+public class Exercicio4 {
 	
 	/**
 	 * 7. Crie uma classe que represente um aluno considerando os atributos: nome, p1, p2. Em outra classe,

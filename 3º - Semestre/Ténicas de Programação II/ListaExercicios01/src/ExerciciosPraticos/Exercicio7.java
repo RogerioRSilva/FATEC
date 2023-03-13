@@ -1,6 +1,6 @@
 package ExerciciosPraticos;
 
-public class Exercicio8 {
+public class Exercicio7 {
 
 	/**
 	 * 10. Uma venda de alimentos precisa contabilizar suas vendas. Para tanto, crie um programa que solicite o

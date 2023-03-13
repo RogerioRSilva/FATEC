@@ -71,13 +71,13 @@ public class Venda {
 		}
 	}
 	
-	public double CalcularMediaVendas(double valorTotalVenda, double qtdadeVenda) {
+	
+	
+	public void ValidarMaiorEMenorValor() {
 		
-		mediaVenda = valorTotalVenda / this.qtdadeVenda;
 		
-		return mediaVenda;
+		
 	}
-			
 	
 	
 	
