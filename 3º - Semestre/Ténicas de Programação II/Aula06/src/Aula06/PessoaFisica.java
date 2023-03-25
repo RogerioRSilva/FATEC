@@ -7,4 +7,9 @@ public class PessoaFisica extends Pessoa {
 		System.out.println("Aliquota PF");
 	}
 
+	@Override
+	public int contDigitos() {
+		// TODO Auto-generated method stub
+		return super.contDigitos();
+	}
 }
