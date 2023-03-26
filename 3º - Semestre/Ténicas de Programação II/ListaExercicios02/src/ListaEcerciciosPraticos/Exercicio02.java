@@ -20,6 +20,7 @@ public class Exercicio02 {
 		}
 		
 		for(int i=0; i < 14; i++) {
+			
 			if(valores[i] % 2 == 0) {
 				System.out.printf("O numero %d e par.\n", valores[i]);
 			}else {

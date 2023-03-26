@@ -1,5 +1,7 @@
 package ListaEcerciciosPraticos;
 
+import java.math.BigDecimal;
+
 public class Exercicio07 {
 
 	/**
@@ -17,7 +19,35 @@ public class Exercicio07 {
 	 */
 	
 	public static void main(String[] args) {
-		System.out.println(Math.round(41.6));
+		
+		double paisA = 5000000;
+		double paisB = 7000000;
+		int anoAtual = 2000;
+		double taxaNatalidadeA = 0.03;
+		double taxaNatalidadeB = 0.02;
+		double porcentagemPaisA;
+		double porcentagemPaisB;
+		double totalPopulacional;
+		
+
+		do {
+			
+			totalPopulacional = paisA + paisB;
+
+			porcentagemPaisA = (paisA * 100) / totalPopulacional;
+			porcentagemPaisB = (paisB * 100) / totalPopulacional;
+			
+			System.out.println("=========== Ano: "+anoAtual+" ==============");
+			System.out.printf("PaisA: %f  |  Procentagem A: %.2f\n", paisA, porcentagemPaisA);
+			System.out.printf("PaisB: %f  |  Procentagem B: %.2f\n", paisB, porcentagemPaisB);
+			System.out.printf("Total Populaional: %f\n", totalPopulacional);
+			System.out.println("==========================================\n");
+			
+			anoAtual = anoAtual + 1;
+			paisA = (paisA * taxaNatalidadeA) + paisA;
+			paisB = (paisB * taxaNatalidadeB) + paisB;
+			
+		}while(porcentagemPaisA < porcentagemPaisB);		
 	}
 	
 }
