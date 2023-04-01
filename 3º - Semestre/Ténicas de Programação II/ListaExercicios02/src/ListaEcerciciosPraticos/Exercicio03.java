@@ -34,8 +34,6 @@ public class Exercicio03 {
 			System.out.println(salarios[i] + "        |        "+salarioReajustado[i]+"             |     "+diferencaSalarial+"\n");
 		}
 		
-		
-		
 		entrada.close();
 	}
 }

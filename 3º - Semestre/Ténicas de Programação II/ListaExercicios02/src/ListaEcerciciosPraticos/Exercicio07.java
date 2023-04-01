@@ -40,7 +40,7 @@ public class Exercicio07 {
 			System.out.println("=========== Ano: "+anoAtual+" ==============");
 			System.out.printf("PaisA: %f  |  Procentagem A: %.2f\n", paisA, porcentagemPaisA);
 			System.out.printf("PaisB: %f  |  Procentagem B: %.2f\n", paisB, porcentagemPaisB);
-			System.out.printf("Total Populaional: %f\n", totalPopulacional);
+			System.out.printf("Total Populacional: %f\n", totalPopulacional);
 			System.out.println("==========================================\n");
 			
 			anoAtual = anoAtual + 1;
