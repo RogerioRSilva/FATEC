@@ -1,0 +1,107 @@
+.contato{
+    width: 95%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #79827F ;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mapa{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+}
+
+.mapa iframe{
+    width: 100%;
+}
+
+.dados{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-left:2rem;
+    justify-content: space-around;
+}
+
+.dados h2{
+    color: #FFF;
+    font-family: sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: -1rem;
+    font-weight: 400;
+}
+
+.dados h3{
+    color: #FFF;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.dados ul{
+    margin-left: 2rem;
+    margin-top: -1.5rem;
+}
+
+.dados ul li{
+    list-style-type: square;
+    height: 20px;
+    color: #FFF;
+}
+
+.dados ul li span{
+    color: #fad608;
+}
+
+.fonte{
+    color: #FFF;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -1.5rem;
+}
+.fonte span{
+    color: #fad608;
+}
+
+.endereco{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+    color: #FFF;
+    font-size: 18px;
+    
+}
+
+.textoEmail{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #FFFF;
+}
+
+.textoEmail h3{
+    font-family:  sans-serif;
+    font-weight: 100;
+}
+
+.textoEmail p{
+    color: #FFFF;
+    font-weight: 600;
+    font-size: 15px;
+}
+.textoEmail span {
+    color: #fad608;
+}
