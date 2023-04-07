@@ -3,7 +3,8 @@
  Aqui estou colocando alguns dos exercícios e projetos que estamos desenvolvendo na faculdade
  FATEC de FRANCA-SP.
 
- 1º - Semestre: JAN - JUN 2022
+ 1º - Semestre: JAN - JUN 2022.
+ 
     Lógicas e Algorítimos ---------- (Desenvolvimento proposto em Portugol Studio)
 
     Desenvolimento WEB I ----------- (Desenvolvimento em Visual Code Studio com HTML e CSS)
@@ -14,7 +15,8 @@
 
     Redes e Sistemas Operacionais -- (Parte teórica e Pratica sobre redes e sistemas operacionais)
 
-2º - Semestre: JUL - DEZ 2022 
+2º - Semestre: JUL - DEZ 2022.
+
     Estrutura de Dados ------------- (Desenvolvimento de técnicas e metodos estruturados em Python)
 
     Banco de Dados ----------------- (Comunicação de banco de dados Não Relacional e Relacional usando MySQL)
@@ -27,7 +29,8 @@
     
     Engenharia de Sofware II ------- (Parte teórica e prática sobre métodos de desenvolvimento de softwares continuidade do anterior.)
 
-3º  - Semestre: JAN - JUN 2023
+3º  - Semestre: JAN - JUN 2023.
+
     Banco de Dados NoSQL ------------ (Desenvolvimento de projetos utilizando o MongoDB)
     
     Dsenvolvimento Web II ----------- (Desenvolvimento de aplicações Web utilizando Node.JS React/Redux)
