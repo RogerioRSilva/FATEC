@@ -1,6 +1,4 @@
 # FATEC - Curso Desenvolvimento de Sofware Multiplataforma
- Todos os dados referente ao curso da faculdade de Desenvolvimento de Software Multiplataforma.
-
 
  Aqui estou colocando alguns dos exercícios e projetos que estamos desenvolvendo na faculdade
  FATEC de FRANCA-SP.
