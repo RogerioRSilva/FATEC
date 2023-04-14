@@ -96,7 +96,7 @@ function Cadastro() {
           <input
             placeholder="Digite seu Nome"
             value={nome}
-            onChange={(e) => setNome(e.target.value)}
+            onChange={(e) => setNome()}
           />
           <br />
           <label>Email: </label>

@@ -17,6 +17,7 @@ public class Exercicio02 {
 		for(int i= 0 ; i < 14; i++) {
 			System.out.println("Insira um numero qualquer: ");
 			valores[i] = entrada.nextInt(); 
+			
 		}
 		
 		for(int i=0; i < 14; i++) {
