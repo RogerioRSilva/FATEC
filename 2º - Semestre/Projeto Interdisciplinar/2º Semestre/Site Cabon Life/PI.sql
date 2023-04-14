@@ -1,0 +1,33 @@
+CREATE DATABASE CARBONLIFE2
+
+USE CARBONLIFE2
+
+CREATE TABLE VEICULOS (
+EMAIL VARCHAR (50),
+SENHA VARCHAR (8),
+VEICULO VARCHAR (50),
+MOTOR DECIMAL (9,2),
+KM DECIMAL (9,2),
+RESULTADO AS KM * 0.3820,
+)
+
+
+SELECT * from VEICULOS
+where EMAIL = 'aaa.s.f@hotmail.com'
+
+update veiculos set senha = 123
+where email = 'rod.s.f@hotmail.com'
+
+INSERT INTO VEICULOS (MOTOR, KM, EMAIL, VEICULO)
+VALUES (1.5, 1500, 'rod.s.f@hotmail.com', 'Sandero'),
+	   (1.6),
+	   (1.7),
+	   (2.0),
+	   (2.5)
+INSERT INTO VEICULOS (KM)
+VALUES (1500)
+
+INSERT INTO VEICULOS (MOTOR, KM, EMAIL, VEICULO)
+VALUES (1.6, 1500, 'aaa.s.f@hotmail.com', 'Fox'),
+
+DROP TABLE VEICULOS
